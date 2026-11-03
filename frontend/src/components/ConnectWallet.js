@@ -7,22 +7,15 @@ export function ConnectWallet({ connectWallet, networkError, dismiss }) {
     <div className="container">
       <div className="row justify-content-md-center">
         <div className="col-12 text-center">
-          {/* Wallet network should be set to Localhost:8545. */}
           {networkError && (
-            <NetworkErrorMessage 
-              message={networkError} 
-              dismiss={dismiss} 
-            />
+            <NetworkErrorMessage message={networkError} dismiss={dismiss} />
           )}
         </div>
         <div className="col-6 p-4 text-center">
-          <p>Please connect to your wallet.</p>
-          <button
-            className="btn btn-warning"
-            type="button"
-            onClick={connectWallet}
-          >
-            Connect Wallet
+          <h1>Turing</h1>
+          <p>Conecte sua carteira para votar.</p>
+          <button className="btn btn-warning" type="button" onClick={connectWallet}>
+            Conectar carteira
           </button>
         </div>
       </div>

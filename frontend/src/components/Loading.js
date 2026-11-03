@@ -27,7 +27,7 @@ export function Loading() {
         }}
       >
         <div className="spinner-border" role="status">
-          <span className="sr-only">Loading...</span>
+          <span className="sr-only">Carregando...</span>
         </div>
       </div>
     </div>
